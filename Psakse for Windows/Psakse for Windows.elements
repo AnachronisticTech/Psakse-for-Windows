@@ -63,7 +63,6 @@
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml" />
     <Compile Include="App.xaml.swift" />
-    <None Include="Properties\App.ico" />
     <Compile Include="Properties\AssemblyInfo.swift" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -78,7 +77,6 @@
     </Page>
     <Compile Include="GameViewController.xaml.swift">
       <DependentUpon>GameViewController.xaml</DependentUpon>
-      <SubType>Code</SubType>
     </Compile>
     <Compile Include="Card.swift" />
     <Compile Include="Colors.swift" />
@@ -92,6 +90,7 @@
     <Resource Include="images\none.png" />
     <Resource Include="images\psi.png" />
     <Resource Include="images\xi.png" />
+    <Resource Include="Properties\App.ico" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />

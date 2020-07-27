@@ -15,6 +15,7 @@ Global
 		{0DC15260-90DD-45C4-8C0E-B10463D0DCD9}.Debug|Default.Build.0 = Debug
 		{0DC15260-90DD-45C4-8C0E-B10463D0DCD9}.Release|Default.ActiveCfg = Release
 		{0DC15260-90DD-45C4-8C0E-B10463D0DCD9}.Release|Default.Build.0 = Release
+		{0DC15260-90DD-45C4-8C0E-B10463D0DCD9}.Release|Default.Deploy.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
