@@ -31,31 +31,31 @@
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Content="" Grid.Column="0" Grid.Row="0" Click="select" x:Name="mg0" Tag="0"/>
-            <Button Content="" Grid.Column="2" Grid.Row="0" Click="select" x:Name="mg1" Tag="1"/>
-            <Button Content="" Grid.Column="4" Grid.Row="0" Click="select" x:Name="mg2" Tag="2"/>
-            <Button Content="" Grid.Column="6" Grid.Row="0" Click="select" x:Name="mg3" Tag="3"/>
-            <Button Content="" Grid.Column="8" Grid.Row="0" Click="select" x:Name="mg4" Tag="4"/>
-            <Button Content="" Grid.Column="0" Grid.Row="2" Click="select" x:Name="mg5" Tag="5"/>
-            <Button Content="" Grid.Column="2" Grid.Row="2" Click="select" x:Name="mg6" Tag="6"/>
-            <Button Content="" Grid.Column="4" Grid.Row="2" Click="select" x:Name="mg7" Tag="7"/>
-            <Button Content="" Grid.Column="6" Grid.Row="2" Click="select" x:Name="mg8" Tag="8"/>
-            <Button Content="" Grid.Column="8" Grid.Row="2" Click="select" x:Name="mg9" Tag="9"/>
-            <Button Content="" Grid.Column="0" Grid.Row="4" Click="select" x:Name="mg10" Tag="10"/>
-            <Button Content="" Grid.Column="2" Grid.Row="4" Click="select" x:Name="mg11" Tag="11"/>
-            <Button Content="" Grid.Column="4" Grid.Row="4" Click="select" x:Name="mg12" Tag="12"/>
-            <Button Content="" Grid.Column="6" Grid.Row="4" Click="select" x:Name="mg13" Tag="13"/>
-            <Button Content="" Grid.Column="8" Grid.Row="4" Click="select" x:Name="mg14" Tag="14"/>
-            <Button Content="" Grid.Column="0" Grid.Row="6" Click="select" x:Name="mg15" Tag="15"/>
-            <Button Content="" Grid.Column="2" Grid.Row="6" Click="select" x:Name="mg16" Tag="16"/>
-            <Button Content="" Grid.Column="4" Grid.Row="6" Click="select" x:Name="mg17" Tag="17"/>
-            <Button Content="" Grid.Column="6" Grid.Row="6" Click="select" x:Name="mg18" Tag="18"/>
-            <Button Content="" Grid.Column="8" Grid.Row="6" Click="select" x:Name="mg19" Tag="19"/>
-            <Button Content="" Grid.Column="0" Grid.Row="8" Click="select" x:Name="mg20" Tag="20"/>
-            <Button Content="" Grid.Column="2" Grid.Row="8" Click="select" x:Name="mg21" Tag="21"/>
-            <Button Content="" Grid.Column="4" Grid.Row="8" Click="select" x:Name="mg22" Tag="22"/>
-            <Button Content="" Grid.Column="6" Grid.Row="8" Click="select" x:Name="mg23" Tag="23"/>
-            <Button Content="" Grid.Column="8" Grid.Row="8" Click="select" x:Name="mg24" Tag="24"/>
+            <Button Content="" Grid.Column="0" Grid.Row="0" Click="select" x:Name="mg0" Tag="0" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="2" Grid.Row="0" Click="select" x:Name="mg1" Tag="1" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="4" Grid.Row="0" Click="select" x:Name="mg2" Tag="2" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="6" Grid.Row="0" Click="select" x:Name="mg3" Tag="3" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="8" Grid.Row="0" Click="select" x:Name="mg4" Tag="4" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="0" Grid.Row="2" Click="select" x:Name="mg5" Tag="5" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="2" Grid.Row="2" Click="select" x:Name="mg6" Tag="6" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="4" Grid.Row="2" Click="select" x:Name="mg7" Tag="7" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="6" Grid.Row="2" Click="select" x:Name="mg8" Tag="8" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="8" Grid.Row="2" Click="select" x:Name="mg9" Tag="9" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="0" Grid.Row="4" Click="select" x:Name="mg10" Tag="10" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="2" Grid.Row="4" Click="select" x:Name="mg11" Tag="11" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="4" Grid.Row="4" Click="select" x:Name="mg12" Tag="12" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="6" Grid.Row="4" Click="select" x:Name="mg13" Tag="13" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="8" Grid.Row="4" Click="select" x:Name="mg14" Tag="14" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="0" Grid.Row="6" Click="select" x:Name="mg15" Tag="15" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="2" Grid.Row="6" Click="select" x:Name="mg16" Tag="16" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="4" Grid.Row="6" Click="select" x:Name="mg17" Tag="17" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="6" Grid.Row="6" Click="select" x:Name="mg18" Tag="18" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="8" Grid.Row="6" Click="select" x:Name="mg19" Tag="19" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="0" Grid.Row="8" Click="select" x:Name="mg20" Tag="20" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="2" Grid.Row="8" Click="select" x:Name="mg21" Tag="21" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="4" Grid.Row="8" Click="select" x:Name="mg22" Tag="22" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="6" Grid.Row="8" Click="select" x:Name="mg23" Tag="23" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="8" Grid.Row="8" Click="select" x:Name="mg24" Tag="24" Style="{DynamicResource Tile}"/>
         </Grid>
         <Grid x:Name="sideGrid" Height="{Binding ActualWidth, ElementName=mg0}" Margin="20" Background="Black" DockPanel.Dock="Bottom">
             <Grid.ColumnDefinitions>
@@ -70,11 +70,11 @@
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
 
-            <Button Content="" Grid.Column="0" Click="select" x:Name="sg0" Tag="25"/>
-            <Button Content="" Grid.Column="2" Click="select" x:Name="sg1" Tag="26"/>
-            <Button Content="" Grid.Column="4" Click="select" x:Name="sg2" Tag="27"/>
-            <Button Content="" Grid.Column="6" Click="select" x:Name="sg3" Tag="28"/>
-            <Button Content="" Grid.Column="8" Click="select" x:Name="sg4" Tag="29"/>
+            <Button Content="" Grid.Column="0" Click="select" x:Name="sg0" Tag="25" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="2" Click="select" x:Name="sg1" Tag="26" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="4" Click="select" x:Name="sg2" Tag="27" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="6" Click="select" x:Name="sg3" Tag="28" Style="{DynamicResource Tile}"/>
+            <Button Content="" Grid.Column="8" Click="select" x:Name="sg4" Tag="29" Style="{DynamicResource Tile}"/>
         </Grid>
     </DockPanel>
 </Window>

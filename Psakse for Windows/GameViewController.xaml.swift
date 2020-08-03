@@ -17,7 +17,6 @@ public __partial class GameViewController {
     var deck:Deck? = nil
     var activeCard:Card? = nil
     var lastSelected = -1
-    var randArray = [Int]()
     var gameComplete = false
     var puzzleID: String? = nil
     var stringOverride: String? = nil
@@ -67,7 +66,7 @@ public __partial class GameViewController {
             deck!.finalShuffle()
             deck!.removeCards(gridSize: gridSize, wildcards: wildcards)
             // three random starting cards section
-            randArray = []
+            var randArray = [Int]()
             for _ in 1...3 {
                 var randPosition = UInt32(gridSize * gridSize)
                 while (
@@ -88,6 +87,7 @@ public __partial class GameViewController {
                 let color = deck!.arr[0].color
                 grid!.buttonGrid[i].setAttrs(image: image, bgColor: color)
                 grid!.buttonGrid[i].setBorder(width: 3, color: Color.FromRgb(255, 255, 0))
+                grid!.buttonGrid[i].IsEnabled = false
                 grid!.grid[i] = deck!.arr[0]
                 let card = deck!.arr.remove(at: 0)
 //                deck!.updateQuantities(card: card)
@@ -106,7 +106,6 @@ public __partial class GameViewController {
 
 	func select(_ sender: System.Object!, _ e: System.Windows.RoutedEventArgs!) {
         let sender = sender as! Button
-        if randArray.contains(Convert.ToInt32(sender.Tag)) { return }
         if let currentActiveCard = activeCard {
             // if sender == gridSize^2 or sender == lastSelected
             // deselect
@@ -203,7 +202,7 @@ public __partial class GameViewController {
             } else {
                 grid!.grid[(gridSize * gridSize)] = nil
                 grid!.buttonGrid[(gridSize * gridSize)].setAttrs(image: "none.png", bgColor: Color.FromRgb(255, 255, 255))
-                randArray.append(gridSize * gridSize)
+                grid!.buttonGrid[(gridSize * gridSize)].IsEnabled = false
             }
         } else {
             setCard(atLocation: position, card: nil)
